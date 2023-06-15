@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cover {
+    background-image: url(img/vivid-blurred-colorful-background.jpg);
+    background-size: cover;
+  }
+  
+ @media only screen and (max-width: 640px) {}
+
+ .container {
+    display: flex; /* or inline-flex */
+    flex-direction: column ;
+  }
