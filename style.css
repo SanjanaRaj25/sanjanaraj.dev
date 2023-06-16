@@ -1,9 +1,17 @@
-body {
+*{
   margin: 0;
   padding: 0;
+  font-family: 'EB Garamond';
+  box-sizing: border-box;
 }
 
-.cover {
+body{
+  /* background-image: url(img/vivid-blurred-colorful-background.jpg); */
+  background: -moz-linear-gradient(rgb(55, 92, 213), rgb(7, 51, 95));
+  color: #ffff
+}
+
+/* .cover {
     background-image: url(img/vivid-blurred-colorful-background.jpg);
     background-size: cover;
   }
@@ -12,5 +20,5 @@ body {
 
  .container {
     display: flex; /* or inline-flex */
-    flex-direction: column ;
-  }
+    /* flex-direction: column ;
+  } */ 
