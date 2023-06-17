@@ -3,62 +3,236 @@
 
 <head>
 
-  <!-- style imports -->
+  <!-- font imports and linking -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
-  </style>
-  <link href='https://fonts.googleapis.com/css?family=Vast Shadow' rel='stylesheet'>
+    @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
 
-                
+  body {
+    font-family: 'Short Stack', cursive;
+  }
+  </style>
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Vast Shadow' rel='stylesheet'>
   <meta charset="UTF-8">
   <meta  http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sanjana Raj</title>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  
   <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="doodle.css" />
 
 </head>
 
-<body>
-  <div id="header">
-    <div id="container">
-      <nav>
-        <img src="logo3.png" class="logo">
-        <ul>
-          <li><a href="#"><i>Home</i></a></li>
-          <li><a href="#"><i>About</i></a></li>
-          <li><a href="#"><i>Experience</i></a></li>
-          <li><a href="#"><i>Resume</i></a></li>
-          <li><a href="#"><i>Linkedin</i></a></li>
-        </ul>
-      </nav>
-      <div class="header-text">
-        <p>Hello! I'm</p>
-        <h1>Sanjana Raj</h1>
-        <h2>I'm a developer, project manager, student, and writer</h2>
-    </div>
+<!-------------header------------>
+
+<body class="doodle">
+  <section id="header">
+  <div class="container text-center">
+    <div class="user-box">
+      <!-- <img src="doodle 3 copy.jpg"> -->
+      <img src="doodle 3 copy.jpg">
+      <h1> Sanjana Raj</h1>
+      <p>project manager, developer, student, & writer</p>
     </div>
   </div>
-<!-------------about------------>
-  <div id="about">
+  <div class="scroll-bin">
+    <div class="scroll-bar">
+      <a href="#about"><span> </span></a>
+    </div>
+  </section>
+
+<!-------------user  info------------>
+
+<section id="user-info">
+<div class="nav-bar">
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#"> <img src="logo3.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+     aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#top">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">ABOUT ME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#xp">EXPERIENCE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
+  </nav>
+</div>
+
+  <!-------------about------------>
+  <section id="about">
+  <div class="about container" id="about">
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <img src="doodle 2 copy.jpg" class="profile-img">
+      </div>
+      <div class="col-md-6">
+        <h3>About Me</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus, beatae nihil ut vero numquam sint corrupti deleniti culpa saepe ipsam error soluta quidem nisi perspiciatis excepturi? Labore, incidunt nisi.</p>
+      
+        <!---------REPLACE THESE WITH BUBBLES-------->
+      <h3>Skills</h3>
+      <div class="skills-bar">
+        <p>Skill 1</p>
+        <div class="progress">
+          <div class="progress-bar" style="width:80%">
+              80%
+          </div>
+        </div>
+
+        <p>Skill 2</p>
+        <div class="progress">
+          <div class="progress-bar" style="width:50%">
+              50%
+          </div>
+        </div>
+
+        <p>Skill 3</p>
+        <div class="progress">
+          <div class="progress-bar" style="width:99%">
+              99%
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------------social icons------------>
+
+<div class="social-icons">
+<ul>
+  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+  <a href="#"><li><i class="fa fa-github"></i></li></a>
+</ul>
+</div>
+
+ <!-------------experience------------>
+ <section id="xp">
+  <div class="experiences" id="experiences">
     <div class="container">
       <div class="row">
-        <div class="about-col-1">
-          <img src="doodle1 copy.jpg">
+        <div class="col-md-6">
+          <h3 class="text-center">Experiences</h3>
+          <ul class="timeline">
+          <li>
+            <h4><span>2018 </span>- SFNFJWF</h4>
+            <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quas, totam explicabo molestiae consequatur omnis optio nesciunt magni. Omnis ab labore itaque consectetur ea velit, magnam ad architecto deleniti temporibus!<br>
+            <b>Company</b> - xyz company<br>
+            <b>Duration</b> - time [start to end]<br>
+            <b>Location</b> - city, state<br>
+          </p>
+          </li>
+          <li>
+            <h4><span>2020 </span>- ERGQRG</h4>
+            <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quas, totam explicabo molestiae consequatur omnis optio nesciunt magni. Omnis ab labore itaque consectetur ea velit, magnam ad architecto deleniti temporibus!<br>
+            <b>Company</b> - xyz company<br>
+            <b>Duration</b> - time [start to end]<br>
+            <b>Location</b> - city, state<br>
+          </p>
+          </li>
+        </ul>
         </div>
-        <div class="about-col-2">
-          <h1 class="sub-title"> About Me </h1>
-          <p> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-
-          <div class="tab-titles">
-            <p class="tab-links">Skills</p>
-            <p class="tab-links">Experience</p>
-            <p class="tab-links">Education</p>
-          </div>
+        <div class="col-md-6 text-center">
+          <img src="books2 copy.jpg" class=profile-img>
         </div>
       </div>
     </div>
   </div>
 
-</body>
+  <div class="education" id="education">
+    <div class="container">
+      <h3 class="text-center">Education</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus, beatae nihil ut vero numquam sint corrupti deleniti culpa saepe ipsam error soluta quidem nisi perspiciatis excepturi? Labore, incidunt nisi.</p>
+    </div>
+  </div>
 
+  <div class="side-projects" id="side-projects">
+    <div class="container">
+      <h3 class="text-center">Side Projects</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus, beatae nihil ut vero numquam sint corrupti deleniti culpa saepe ipsam error soluta quidem nisi perspiciatis excepturi? Labore, incidunt nisi.</p>
+    </div>
+  </div>
+</section>
+
+<!-------------contact------------>
+
+<section id="contact">
+  <div class="contact" id="contact">
+    <div class="container">
+      <div class="text-center">
+
+        <h1 class="text-center">Contact Me:</h1>
+      <p class="text-center"><b>email:</b> sanjana.raj.25@dartmouth.edu</p>
+
+      <button type="button" class="text-center">
+        <i class ="fa fa-download"></i>
+          Resume
+      </button>
+  
+      <button type="button" class="text-center">
+        <i class="fa fa-rocket"></i>
+          Linkedin
+      </button>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <section id="contact">
+<div class="contact" id="contact">
+  <h1>contacts:</h1>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <i class="fa fa-envelope"></i>
+        <h2>Email</h2>
+        <p>sanjana.raj.25@dartmouth.edu</p>
+
+        <h2>Media</h2>
+    <button type="button" class="btn btn-primary">
+      <i class="fa fa-download"></i>
+        Resume
+    </button>
+
+    <button type="button" class="btn btn-primary">
+      <i class="fa fa-rocket"></i>
+        Linkedin
+    </button>
+    </div>
+  </div>
+</div>
+</section> -->
+
+<!-- Smooth Scroll -->
+<script src="smooth-scroll-master/src/smooth-scroll.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
+</body>
 </html>
