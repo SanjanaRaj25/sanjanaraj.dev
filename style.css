@@ -75,8 +75,8 @@ body{
 
 .typed-out {
   overflow: hidden;
-  border-right: .15em solid orange;
-  font-size: 1.6rem;
+  border-right: .15em solid #b0a1a2;
+  /* font-size: 1.6rem; */
   width: 0;
   animation: 
     typing 1s steps(20, end) forwards,
@@ -90,7 +90,7 @@ body{
 
 @keyframes blink {
   from { border-color: transparent }
-  to { border-color: rgb(20, 120, 65); }
+  to { border-color: #b0a1a2; }
 }
 
 /*--- about CSS--*/
