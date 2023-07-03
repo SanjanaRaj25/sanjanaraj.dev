@@ -5,6 +5,7 @@ body{
   font-style: normal;
   font-weight: 400;
   font-display: swap;
+  background-color: #2e2829;
 }
 
 /*--- header CSS--*/
@@ -72,7 +73,8 @@ body{
   padding-top: 100px;
   margin-bottom: -130px;
   height: 100vh;
-  background-color: #312b2c;
+  background-color: #2e2829;
+  color: #fff;
 }
 
 .nav-bar{
@@ -195,14 +197,14 @@ body{
   height: 100vh;
   padding-top: 50px;
   padding-bottom: 30px;
-  background:#b0a1a2;
+  background: #87807c;
 }
 
 .side-projects{
   height: 100vh;
   padding-top: 50px;
   padding-bottom: 30px;
-  background: #87807c;
+  background:#b0a1a2;
 }
 
 /*--- contact CSS--*/
