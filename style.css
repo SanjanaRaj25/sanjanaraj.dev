@@ -74,6 +74,7 @@ body{
 }
 
 .typed-out {
+  position: relative;
   overflow: hidden;
   border-right: .15em solid #b0a1a2;
   /* font-size: 1.6rem; */
@@ -88,10 +89,10 @@ body{
   to { width: 100% }
 }
 
-/* @keyframes blink {
+@keyframes blink {
   from { border-color: transparent }
   to { border-color: #b0a1a2; }
-} */
+}
 
 /*--- about CSS--*/
 
