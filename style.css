@@ -80,7 +80,7 @@ body{
   /* font-size: 1.6rem; */
   width: 0;
   animation: 
-    typing 1s steps(20, end) forwards,
+    typing 1s steps(5, end) forwards,
     blink .5s infinite;
 }
 
