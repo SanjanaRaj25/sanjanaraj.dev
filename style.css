@@ -3,6 +3,11 @@ body{
   padding: 0;
   font-family: 'Short Stack';
   font-style: normal;
+
+  h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+  }
+
   font-weight: 400;
   font-display: swap;
   background-color: #2e2829;
@@ -66,6 +71,26 @@ body{
 @keyframes mover{
   0%{transform: translateY(0);}
   100%{transform: translateY(10px);}
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  font-size: 1.6rem;
+  width: 0;
+  animation: 
+    typing 1s steps(20, end) forwards,
+    blink .8s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: rgb(20, 120, 65); }
 }
 
 /*--- about CSS--*/
