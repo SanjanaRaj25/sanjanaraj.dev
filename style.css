@@ -90,6 +90,7 @@ body{
 }
 
 .navbar-brand img{
+  padding-left: 10%;
   height: 50px;
 }
 
