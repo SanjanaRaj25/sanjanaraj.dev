@@ -1,7 +1,8 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: 'Short Stack';
+  /* font-family: 'Short Stack'; */
+  font-family: Georgia, serif;
   font-style: normal;
 
   h2, h3, h4, h5, h6 {
@@ -74,26 +75,13 @@ body{
 }
 
 .typed-out {
-  position: relative;
   overflow: hidden;
-  border-right: .2em solid #b0a1a2;
-  /* font-size: 1.6rem; */
+  border-right: .05em solid #b0a1a2;
   width: 0;
   animation: 
-    typing 1s steps(5, end) forwards,
+    typing 2.5s steps(75) forwards,
     blink .5s infinite;
-}
-
-
-.typed-out{
-  overflow: hidden;
-  border-right: .15em solid orange;
   white-space: nowrap;
-  /* font-size: 1.6rem; */
-  width: 0;
-  animation: 
-    typing 1s steps(20, end) forwards,
-    blink .8s infinite;
 }
 
 
@@ -151,6 +139,34 @@ body{
   color: #fff !important;
 }
 
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+  color:bisque;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+  width:100%
+}
+
 .skills-bar p{
   margin-bottom: 6px;
   font-weight: 600;
@@ -169,11 +185,13 @@ body{
 /*--- experiences CSS--*/
 
 .experiences{
-  margin-top: 50px;
-  padding-top: 50px;
-  height: 100vh;
-  padding-bottom: 30px;
-  background-color: #2e2829;
+  align-content: center;
+  align-items: center;
+  padding-top: 100px;
+  margin-bottom: -130px;
+  height: 150vh;
+  padding-bottom: 300px;
+  background-color: #87807c;
 }
 
 .experiences h3{
@@ -231,7 +249,7 @@ body{
   border-radius: 30%;
   width: 300px;
   height: 300px;
-  border: 2px white;
+  border: 2px rgb(96, 84, 84);
   align-content: center;
 }
 
