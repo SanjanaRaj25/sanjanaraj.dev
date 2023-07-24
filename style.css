@@ -36,6 +36,7 @@ body{
 .user-box img{
   border-radius: 30%;
   width: 250px;
+  background-color: antiquewhite;
   border: 2px solid #2e2829;
 }
 
@@ -324,6 +325,7 @@ nav ul li a:hover::after{
   position: sticky;
   z-index: 1;
   width: 80px;
+  color: #f9f9f9;
 }
 
 /* .social-icons ul{
