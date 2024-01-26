@@ -205,15 +205,42 @@ nav li a:hover{
     border: 1px solid black;
 } */
 
+/* #map{
+    border: 1px solid black;
+    height: 50%;
+    width: 50%;
+} */
+
+/* #map svg{
+    border: 1px solid black;
+} */
+
+#map svg g{
+    border: 1px solid rgb(186, 25, 25);
+}
+
 path#AL, path#NC, path#NH, path#IN, path#WI, path#MI, path#IA{
     fill:#C5B4E3;fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+}
+
+path#AL:hover, path#NC:hover, path#NH:hover, path#IN:hover, path#WI:hover, path#MI:hover, path#IA:hover{
+    fill:#9fdae9;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
 
 path{
     fill:#E5E5EA;fill-opacity:0;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
-path#AL:hover, path#NC:hover, path#NH:hover, path#IN:hover, path#WI:hover, path#MI:hover, path#IA:hover{
-    fill:var(--accent4);fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+
+path#canvas{
+    height: 50%;
+    width: 50%;
+    fill:#9fdae9;fill-opacity:.1;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+}
+
+#svg1923, #image1930, #metadata1928, #defs1926, #base, #layer1, #layer2, #canvas, path{
+    border: 1px solid var(--accent2); 
+    /* height: 60%;
+    width: 60%; */
 }
 
 
