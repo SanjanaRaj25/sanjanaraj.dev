@@ -1,19 +1,35 @@
 :root{
+    /* coffee color palette */
     --dark-color: #515561;
     --mid-color: #967c74;
     --light-color: #D8B199;
     --lightest-color: bisque;
     --accent-color: #C5B4E3;
 
-    --header-back: #C7B8EA;
+    /* purple color palette */
+    /* --header-back: #C7B8EA;
     --header-text: #E5E5EA;
     --nav-back: #2C1B77;
     --nav-text: #E5E5EA;
     --general-back: #E5E5EA;
-    --general-text: #25195A;
+    --general-text: #25195A; */
+
+    /* minimal pastel */
+    --header-back: #fcf1e7;
+    --header-text: #343233;
+    --nav-back: #fcf1e7;
+    --nav-text: #343233;
+    --general-back: #fcf1e7;
+    --general-text: #343233;
+    --accent1: #C5B4E3;
+    --accent2: #ffbae9;
+    --accent3: #ffdd00;
+    --accent4: #abe585;
+    --accent5: #9fdae9;
+    --accent6: #da9191;
+
+
 }
-
-
 
 body {
     background-color: var(--general-back);
@@ -43,6 +59,44 @@ header h1{
 
 header h1:hover{
     transform: translateY(-7px);
+    color: var(--accent1);
+    border: 1px dashed var(--accent1);
+    transition: color 0.3s ease;
+}
+
+header h1#A:hover{
+    transform: translateY(-7px);
+    color: var(--accent1);
+    border: 1px dashed var(--accent1);
+    transition: color 0.3s ease;
+}
+
+header h1#B:hover{
+    transform: translateY(-7px);
+    color: var(--accent2);
+    border: 1px dashed var(--accent2);
+    transition: color 0.3s ease;
+}
+
+header h1#C:hover{
+    transform: translateY(-7px);
+    color: var(--accent3);
+    border: 1px dashed var(--accent3);
+    transition: color 0.3s ease;
+}
+
+header h1#D:hover{
+    transform: translateY(-7px);
+    color: var(--accent4);
+    border: 1px dashed var(--accent4);
+    transition: color 0.3s ease;
+}
+
+header h1#E:hover{
+    transform: translateY(-7px);
+    color: var(--accent5);
+    border: 1px dashed var(--accent5);
+    transition: color 0.3s ease;
 }
 
 h1#inv{
@@ -78,8 +132,9 @@ nav li a{
 }
 
 nav li a:hover{
-    color: var(--header-back);
-    text-decoration: underline;
+    color: var(--accent1);
+    transition: color 0.5s ease;
+    /* text-decoration: underline; */
 }
 
 /* about section */
@@ -96,8 +151,9 @@ nav li a:hover{
 }
 
 .about h2:hover {
-    color: var(--header-back);
-    text-decoration: underline;
+    color: var(--accent2);
+    transition: color 0.5s ease;
+    /* text-decoration: underline; */
 }
 
 .about img{
@@ -115,8 +171,9 @@ nav li a:hover{
 }
 
 .projects h2:hover {
-    color: var(--header-back);
-    text-decoration: underline;
+    color: var(--accent3);
+    transition: color 0.5s ease;
+    /* text-decoration: underline; */
 }
 
 /* skills section */
@@ -126,8 +183,9 @@ nav li a:hover{
 }
 
 .skills h2:hover {
-    color: var(--header-back);
-    text-decoration: underline;
+    color: var(--accent4);
+    transition: color 0.5s ease;
+    /* text-decoration: underline; */
 }
 
 /* contact section */
@@ -137,9 +195,16 @@ nav li a:hover{
 }
 
 .contact h2:hover {
-    color: var(--header-back);
-    text-decoration: underline;
+    color: var(--accent5);
+    transition: color 0.5s ease;
+    /* text-decoration: underline; */
 }
+
+
+/* map  */
+svg g path#NC{
+    color: var(--accent5);
+  }
 
 
 /* media queries */
