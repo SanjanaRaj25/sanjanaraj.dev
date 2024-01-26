@@ -200,11 +200,22 @@ nav li a:hover{
     /* text-decoration: underline; */
 }
 
-
 /* map  */
-svg g path#NC{
-    color: var(--accent5);
-  }
+/* svg#svg1923{
+    border: 1px solid black;
+} */
+
+path#AL, path#NC, path#NH, path#IN, path#WI, path#MI, path#IA{
+    fill:#C5B4E3;fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+}
+
+path{
+    fill:#E5E5EA;fill-opacity:0;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+}
+path#AL:hover, path#NC:hover, path#NH:hover, path#IN:hover, path#WI:hover, path#MI:hover, path#IA:hover{
+    fill:var(--accent4);fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+}
+
 
 
 /* media queries */
