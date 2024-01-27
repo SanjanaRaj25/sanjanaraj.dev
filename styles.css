@@ -27,6 +27,7 @@
     --accent4: #abe585;
     --accent5: #9fdae9;
     --accent6: #da9191;
+    --accent7: rgb(123, 109, 253); 
 
 
 }
@@ -164,6 +165,21 @@ nav li a:hover{
     max-height: 30%
 }
 
+.about .about-content{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    /* align-content: center; */
+    /* justify-content: space-evenly; */
+    flex-direction: row-reverse;
+
+}
+
+/* .about .about-content .about-content-graphics{
+    border-radius: 10%;
+
+} */
+
 /* projects section */
 .projects h2{
     font-family: "Lato", cursive;
@@ -200,49 +216,55 @@ nav li a:hover{
     /* text-decoration: underline; */
 }
 
-/* map  */
-/* svg#svg1923{
-    border: 1px solid black;
-} */
-
-/* #map{
-    border: 1px solid black;
-    height: 50%;
-    width: 50%;
-} */
-
-/* #map svg{
-    border: 1px solid black;
-} */
-
-#map svg g{
-    border: 1px solid rgb(186, 25, 25);
-}
-
-path#AL, path#NC, path#NH, path#IN, path#WI, path#MI, path#IA{
-    fill:#C5B4E3;fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
-}
-
-path#AL:hover, path#NC:hover, path#NH:hover, path#IN:hover, path#WI:hover, path#MI:hover, path#IA:hover{
-    fill:#9fdae9;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+svg#svg1923{
+    width:"1182";
+    height:"635";
 }
 
 path{
     fill:#E5E5EA;fill-opacity:0;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
 
-path#canvas{
-    height: 50%;
-    width: 50%;
-    fill:#9fdae9;fill-opacity:.1;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+path#NC, path#NH, path#IN, path#WI, path#MI, path#IA{
+    fill:#C5B4E3;fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
 
-#svg1923, #image1930, #metadata1928, #defs1926, #base, #layer1, #layer2, #canvas, path{
-    border: 1px solid var(--accent2); 
-    /* height: 60%;
-    width: 60%; */
+path#AL:hover{
+    fill:var(--accent6);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
 
+path#NC{
+    fill:var(--accent1);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+}
+
+path#NH{
+    fill:var(--accent3);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+}
+
+path#IN{
+    fill:var(--accent4);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+}
+
+path#WI{
+    fill:var(--accent5);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+}
+
+path#MI{
+    fill:var(--accent2);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+}
+
+path#IA{
+    fill:var(--accent7);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+}
+
+
+/* path#canvas{
+    fill:#9fdae9;fill-opacity:.3;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+} */
+
+/* path#canvas:hover{
+    fill:#18b52f;fill-opacity:.3;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+} */
 
 
 /* media queries */
@@ -257,5 +279,12 @@ path#canvas{
         font-family: "Lato", sans-serif;
         font-size: 15px;
         font-style: italic;
+    }
+
+    .about .about-content{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
     }
   }
