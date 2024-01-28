@@ -21,6 +21,7 @@
     --nav-text: #343233;
     --general-back: #fcf1e7;
     --general-text: #343233;
+    --other-back:  #E5E5EA;
     --accent1: #C5B4E3;
     --accent2: #ffbae9;
     --accent3: #ffdd00;
@@ -163,7 +164,10 @@ nav li a:hover{
     align-self: center;
     position: relative;
     max-width: 30%;
-    max-height: 30%
+    max-height: 30%;
+    height: 100px;
+    width: 250px;
+    border-radius: 50%;
 }
 
 .about .about-content{
@@ -176,47 +180,7 @@ nav li a:hover{
 
 }
 
-/* .about .about-content .about-content-graphics{
-    border-radius: 10%;
-
-} */
-
-/* projects section */
-.projects h2{
-    font-family: "Lato", cursive;
-    font-size: 35px;
-}
-
-.projects h2:hover {
-    color: var(--accent3);
-    transition: color 0.5s ease;
-    /* text-decoration: underline; */
-}
-
-/* skills section */
-.skills h2{
-    font-family: "Lato", cursive;
-    font-size: 35px;
-}
-
-.skills h2:hover {
-    color: var(--accent4);
-    transition: color 0.5s ease;
-    /* text-decoration: underline; */
-}
-
-/* contact section */
-.contact h2{
-    font-family: "Lato", cursive;
-    font-size: 35px;
-}
-
-.contact h2:hover {
-    color: var(--accent5);
-    transition: color 0.5s ease;
-    /* text-decoration: underline; */
-}
-  svg {
+svg {
     top: 0;
     left: 0; 
   }
@@ -291,8 +255,150 @@ path.arrow{
 
 
   #map p:hover {
-    background-color: var(--accent1);
-  }
+    color: var(--accent1);
+}
+
+/* projects section */
+
+.projects {
+    color: var(--general-text);
+    /* position: relative; */
+}
+
+.projects h2{
+    text-align: center;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: "Lato", cursive;
+    font-size: 35px;
+}
+
+.projects h2:hover {
+    color: var(--accent3);
+    transition: color 0.5s ease;
+    /* text-decoration: underline; */
+}
+
+.projects .card-gallery{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    gap: 10px;
+
+}
+
+.projects .card {
+    height: 250px;
+    width: 200px;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 33%;
+    background-color: rgb(216, 202, 184);
+    opacity: .9;
+}
+
+.projects .card h3 {
+    padding-top: 5%;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.projects .card p {
+    display: inline;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.projects .card p#org {
+    color: black;
+    border: 2px solid var(--accent2);
+    width:100%;
+    height:1em;
+    z-index:-1;
+    left:-0.25em;
+    top:0.1em;
+    padding:0 0.25em;
+    border-radius: 25%;
+}
+
+.projects .card p#role {
+    color: black;
+    border: 2px solid var(--accent3);
+    width:100%;
+    height:1em;
+    z-index:-1;
+    left:-0.25em;
+    top:0.1em;
+    padding:0 0.25em;
+    border-radius: 25%;
+}
+
+.projects .card p#des {
+    color: black;
+    border: 2px solid var(--accent4);
+    width:100%;
+    height:1em;
+    z-index:-1;
+    left:-0.25em;
+    top:0.1em;
+    padding:0 0.25em;
+    border-radius: 25%;
+}
+
+hr{
+    color:var(--nav-back);
+}
+
+.projects .card #project-skills {
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.projects .card#PM {
+    border: 5px solid var(--accent2);
+}
+
+.projects .card#SWE {
+    border: 5px solid var(--accent1);
+}
+
+.projects .card#researcher {
+    border: 5px solid var(--accent5);
+}
+
+
+/* skills section */
+.skills h2{
+    font-family: "Lato", cursive;
+    font-size: 35px;
+}
+
+.skills h2:hover {
+    color: var(--accent4);
+    transition: color 0.5s ease;
+    /* text-decoration: underline; */
+}
+
+/* contact section */
+.contact h2{
+    font-family: "Lato", cursive;
+    font-size: 35px;
+}
+
+.contact h2:hover {
+    color: var(--accent5);
+    transition: color 0.5s ease;
+    /* text-decoration: underline; */
+}
+
 
 /* media queries */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
