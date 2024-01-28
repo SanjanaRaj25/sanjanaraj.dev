@@ -28,6 +28,7 @@
     --accent5: #9fdae9;
     --accent6: #da9191;
     --accent7: rgb(123, 109, 253); 
+    --accent8: rgb(255, 203, 171);
 
 
 }
@@ -215,57 +216,83 @@ nav li a:hover{
     transition: color 0.5s ease;
     /* text-decoration: underline; */
 }
-
-svg#svg1923{
-    width:"1182";
-    height:"635";
-}
+  svg {
+    top: 0;
+    left: 0; 
+  }
 
 path{
-    fill:#E5E5EA;fill-opacity:0;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+    z-index: 1;
+    fill:none;fill-opacity:0;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
 
-path#NC, path#NH, path#IN, path#WI, path#MI, path#IA{
+path#AL, path#NC, path#NH, path#IN, path#WI, path#MI, path#IA{
+    cursor: pointer;
+    z-index: 2;
+    transition: fill 0.5s;
     fill:#C5B4E3;fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
 
 path#AL:hover{
+    z-index: 10;
     fill:var(--accent6);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
 
-path#NC{
-    fill:var(--accent1);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+path#NC:hover{
+    z-index: 10;
+    fill:var(--accent8);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
 
-path#NH{
+path#NH:hover{
+    z-index: 10;
     fill:var(--accent3);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
 
-path#IN{
+path#IN:hover{
+    z-index: 10;
     fill:var(--accent4);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
 
-path#WI{
+path#WI:hover{
+    z-index: 10;
     fill:var(--accent5);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
 
-path#MI{
+path#MI:hover{
+    z-index: 10;
     fill:var(--accent2);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
 
-path#IA{
+path#IA:hover{
+    z-index: 10;
     fill:var(--accent7);fill-opacity:.7;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
 
+path.dot{
+    z-index: 12;
+    fill:var(--accent7);fill-opacity:1;fill-rule:evenodd;
+    stroke: rgb(2, 0, 5);
+    stroke-width: 3px;
+} 
 
-/* path#canvas{
-    fill:#9fdae9;fill-opacity:.3;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
-} */
+path.arrow{
+    opacity: .75;
+    z-index: 11;
+    fill:var(--accent7);fill-opacity:1;fill-rule:evenodd;
+    stroke: var(--accent7);
+    stroke-width: 2px;
+}
 
-/* path#canvas:hover{
-    fill:#18b52f;fill-opacity:.3;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
-} */
+#map p {
+    translate: 0 -70px;
+    font-style: italic;
+    transition: background-color 0.5s;
+}
 
+
+  #map p:hover {
+    background-color: var(--accent1);
+  }
 
 /* media queries */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
