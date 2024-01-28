@@ -271,7 +271,7 @@ path#IA:hover{
 path.dot{
     z-index: 12;
     fill:var(--accent7);fill-opacity:1;fill-rule:evenodd;
-    stroke: rgb(2, 0, 5);
+    stroke: var(--accent7);
     stroke-width: 3px;
 } 
 
