@@ -1,6 +1,5 @@
-// // map arrows
+const canvas = document.querySelector('canvas');
+const ctx = canvas.getContext('2d');
 
-//     const startElement = document.getElementById('southfield');
-//     const endElement = document.getElementById('west-laf');
-
-//     new LeaderLine(startElement, endElement, {color: 'red', size: 8});
+ctx.fillStyle = 'blue';
+ctx.fillRect(0, 0, 200, 200);

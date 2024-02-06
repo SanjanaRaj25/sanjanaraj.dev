@@ -42,6 +42,12 @@ body {
     max-width: 100%;
 }
 
+:target {
+    scroll-margin-top: 100px;
+   }
+
+/* header */
+
 header{
     background-color: var(--header-back);
     color: var(--general-text);
@@ -102,16 +108,36 @@ header h1#E:hover{
     transition: color 0.3s ease;
 }
 
+nav a{
+    color: var(--accent1);
+}
+
+nav #contact-icons a{
+    color: var(--accent1);
+    height: 15px;
+    width: 15px;
+    transition: color 0.3s ease;
+}
+
+nav #contact-icons a:hover{
+    color: var(--accent3);
+}
+
 h1#inv{
     opacity: 0%;
 }
 
+/* navigation */
+
 nav{
     background-color: var(--nav-back);
-    padding: 13px;
+    padding: 20px;
     width: 100%;
+    height: 50px;
+    top: 0;
     position: -webkit-sticky;
     position: sticky;
+    z-index: 100;
     
 }
 
@@ -148,6 +174,7 @@ nav li a:hover{
     position: relative;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 10%;
 }
 
 .about h2{
@@ -168,8 +195,6 @@ nav li a:hover{
 }
 
 .about .about-content p{
-
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     align-items: start;
 }
@@ -177,17 +202,19 @@ nav li a:hover{
 .about .about-content{
     display: flex;
     flex-direction: row-reverse;
-
 }
 
-svg {
-    top: 0;
-    left: 0; 
-  }
+.about p #accent {
+    color: var(--accent2);
+}
+
+.about a {
+    color: var(--accent1);
+}
 
 path{
     z-index: 1;
-    fill:none;fill-opacity:0;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
+    fill:none;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
 }
 
 path#AL, path#NC, path#NH, path#IN, path#WI, path#MI, path#IA{
@@ -233,24 +260,27 @@ path#IA:hover{
 }
 
 path.dot{
-    z-index: 12;
-    fill:var(--accent7);fill-opacity:1;fill-rule:evenodd;
-    stroke: var(--accent7);
-    stroke-width: 3px;
+    opacity: 0;
 } 
 
-path.arrow{
-    opacity: .75;
-    z-index: 11;
-    fill:var(--accent7);fill-opacity:1;fill-rule:evenodd;
-    stroke: var(--accent7);
-    stroke-width: 2px;
-}
+/* path.dot{
+    transition: fill 0.5s;
+    z-index: 12;
+    fill:black;fill-opacity:.5;fill-rule:evenodd;
+    stroke: black;
+    stroke-width: 1px;
+} 
 
-path.arrowhead{
-    height: "5";
-    width: "5";
-    fill:lime;stroke:purple;stroke-width:1;
+path.dot:hover{
+    z-index: 12;
+    fill:var(--accent3);fill-opacity:.5;fill-rule:evenodd;
+    stroke: var(--accent3);
+    stroke-width: 3px;
+}  */
+
+svg svg#arrow:hover{
+    fill:var(--accent3);fill-opacity:.5;fill-rule:evenodd;
+    stroke: var(--accent3);
 }
 
 #map p {
@@ -260,14 +290,28 @@ path.arrowhead{
 }
 
 
-  #map p:hover {
+#map p:hover {
     color: var(--accent1);
 }
 
+foreignObject canvas{
+    width: 200px;
+    height: 200px;
+}
 /* projects section */
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *:before *:after {
+    box-sizing: inherit;
+}
 
 .projects {
     color: var(--general-text);
+    padding-bottom: 10%;
     /* position: relative; */
 }
 
@@ -287,39 +331,87 @@ path.arrowhead{
 }
 
 .projects .card-gallery{
-    padding-left: 5%;
-    padding-right: 5%;
     display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-    gap: 10px;
-
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 2000px;
 }
 
-.projects .card {
-    height: 250px;
-    width: 200px;
-    padding-left: 1%;
-    padding-right: 1%;
+.projects .card-gallery .card{
+    position: relative;
     border-radius: 33%;
-    background-color: rgb(216, 202, 184);
-    opacity: .9;
+    width: 300px;
+    min-height: 300px;
+    perspective: 1000px;
+    margin: 10px;
 }
 
-.projects .card h3 {
-    padding-top: 5%;
+.projects .card-gallery .card .card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card-front, .card-back{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background:linear-gradient(to bottom right, var(--accent2), var(--general-back)) 
+}
+
+.card-back{
+    background:linear-gradient(to bottom right, var(--general-back), var(--accent1));
+    color: black;
+    transform: rotateX(180deg);
+}
+
+.card#PM .card-front{
     text-align: center;
     justify-content: center;
-    font-size: 14px;
-    letter-spacing: 3px;
+    background:linear-gradient(to bottom right, var(--accent4), var(--general-back)) 
+}
+
+
+.card#researcher .card-front{
+    text-align: center;
+    justify-content: center;
+    background:linear-gradient(to bottom right, var(--accent5), var(--general-back)) 
+}
+
+.card-front{
+    text-align: center;
+    justify-content: center;
+}
+
+
+.projects .card img {
+    width: 150px;
+    height: 150px;
+    max-width: 60%;
+    max-height: 60%;
+    border-radius: 50%;
+
+}
+
+.card-back #text{
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .projects .card p {
     display: inline;
-    padding-left: 5%;
-    padding-right: 5%;
     font-size: 10px;
     font-style: italic;
+}
+
+.projects .card h3 {
+    padding-top: 5%;
+    font-size: 20px;
+    letter-spacing: 3px;
 }
 
 .projects .card p#org {
@@ -358,53 +450,134 @@ path.arrowhead{
     border-radius: 25%;
 }
 
+.projects .card-gallery .card:hover .card-inner{
+    transform: rotateX(-180deg);
+}
+
 hr{
     color:var(--nav-back);
 }
 
-.projects .card #project-skills {
-    text-align: center;
-    font-size: 10px;
-    font-style: italic;
-}
-
-.projects .card#PM {
-    border: 5px solid var(--accent2);
-}
-
-.projects .card#SWE {
-    border: 5px solid var(--accent1);
-}
-
-.projects .card#researcher {
-    border: 5px solid var(--accent5);
-}
-
-
 /* skills section */
-.skills h2{
+.Experience {
+    font-family: "Lato", cursive;
+    padding-bottom: 20%;
+}
+
+.Experience h2{
+    text-align: center;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
     font-family: "Lato", cursive;
     font-size: 35px;
 }
 
-.skills h2:hover {
+.Experience h2:hover {
     color: var(--accent4);
     transition: color 0.5s ease;
     /* text-decoration: underline; */
 }
 
-/* contact section */
-.contact h2{
-    font-family: "Lato", cursive;
-    font-size: 35px;
+.Experience #exp-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.contact h2:hover {
-    color: var(--accent5);
+.Experience ul li{
+    font-size: 12px;
+    display: inline-flex;
+}
+
+.Experience ul li #date{
+    background-color: var(--accent2);
+    padding-right: 5px;
+}
+
+.Experience img{
+    height: 250px;
+    width: 250px;
+    border-radius: 33%;
+}
+
+.Experience .langs{
+    width: 50%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.Experience .langs h4{
+    font-size: 20px;
     transition: color 0.5s ease;
-    /* text-decoration: underline; */
 }
 
+.Experience .langs h4:hover{
+    color: var(--accent5);
+}
+
+.Experience .langs i{
+    font-size: 25px;
+    transition: color 0.5s ease;
+    color: var(--accent1);
+}
+
+.Experience .langs i:hover{
+    color: var(--accent5);
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    background-color: var(--accent1);
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    margin: auto;
+}
+
+.footer p {
+    font-style: italic;
+    align-content: center;
+    color: white;
+}
+
+.footer #contact-icons a{
+    color: white;
+}
+
+.footer #contact-icons a:hover{
+    color: var(--accent3);
+}
+
+.footer #source-code a{
+    text-decoration: none;
+    font-style: italic;
+}
+
+.footer #source-code p{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: color 0.3s ease;
+}
+
+.footer #source-code p:hover{
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: var(--accent3);
+    border: 1px solid var(--accent3);
+}
 
 /* media queries */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -425,5 +598,18 @@ hr{
         align-content: center;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .Experience #exp-content{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Experience #exp-content img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
   }
