@@ -105,7 +105,7 @@ hoverNC = () => {
 }
 
 hoverNH = () => {
-    fade("#ffdd00", "2019-2021", "Hanover, NH");
+    fade("#ffdd00", "2021-2025", "Hanover, NH");
 }
 
 hoverIN = () => {
