@@ -2,7 +2,7 @@
     /* coffee color palette */
     --dark-color: #515561;
     --mid-color: #967c74;
-    --light-color: #D8B199;
+    --light-color: #fbecffcb;
     --lightest-color: bisque;
     --accent-color: #C5B4E3;
 
@@ -31,6 +31,7 @@
     --accent7: rgb(123, 109, 253); 
     --accent8: rgb(255, 203, 171);
 
+    --accent10: #ece1ff;
 
 }
 
@@ -263,21 +264,6 @@ path.dot{
     opacity: 0;
 } 
 
-/* path.dot{
-    transition: fill 0.5s;
-    z-index: 12;
-    fill:black;fill-opacity:.5;fill-rule:evenodd;
-    stroke: black;
-    stroke-width: 1px;
-} 
-
-path.dot:hover{
-    z-index: 12;
-    fill:var(--accent3);fill-opacity:.5;fill-rule:evenodd;
-    stroke: var(--accent3);
-    stroke-width: 3px;
-}  */
-
 svg svg#arrow:hover{
     fill:var(--accent3);fill-opacity:.5;fill-rule:evenodd;
     stroke: var(--accent3);
@@ -294,10 +280,6 @@ svg svg#arrow:hover{
     color: var(--accent1);
 }
 
-foreignObject canvas{
-    width: 200px;
-    height: 200px;
-}
 /* projects section */
 
 html {
