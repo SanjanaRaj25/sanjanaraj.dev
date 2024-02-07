@@ -280,6 +280,15 @@ svg svg#arrow:hover{
     color: var(--accent1);
 }
 
+canvas.fade {
+    opacity: 0.3;
+    transition: 0.5s; 
+}
+  
+canvas.active {
+    opacity: 0.5;
+}
+
 /* projects section */
 
 html {
@@ -480,6 +489,7 @@ hr{
 .Experience img{
     height: 250px;
     width: 250px;
+
     border-radius: 33%;
 }
 
@@ -592,6 +602,6 @@ hr{
     .Experience #exp-content img{
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        
     }
   }
